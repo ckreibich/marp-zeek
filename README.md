@@ -1,5 +1,5 @@
 Generate HTML via:
 
 ```
-$ marp --theme ./zeek.css slides.md -o docs/index.html
+$ marp --engine marp/engine.js --theme ./zeek.css slides.md -o docs/index.html
 ```
