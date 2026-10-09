@@ -1,0 +1,110 @@
+/* @theme zeek */
+
+/* A starting point for our own modifications.
+ * See: https://github.com/marp-team/marp-core/blob/main/themes/gaia.scss
+ */
+@import "gaia";
+
+/* Fonts we use in our theme: */
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"');
+
+/* Use highlight.js's Github theme for syntax highlighting */
+@import "github.css";
+
+:root {
+    font-family: 'Carlito', sans-serif;
+    color: #505050;
+    background: white;
+}
+
+h1 {
+    color: #08A9E2;
+    font-size: 1.7em;
+}
+
+h2 {
+    color: #3485A1;
+    font-size: 1.4em;
+}
+
+h3 {
+    color: #4A7381;
+    font-size: 1.2em;
+}
+
+h4 {
+    color: #606060; 
+    font-size: 1em;
+}
+
+h5 {
+    color: #505050; 
+    font-size: 0.9em;
+}
+
+pre, code {
+    font-family: 'Inconsolata', monospace;
+    font-size: 115%;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    color: #505080;
+}
+
+/* This is for inline code snippets. */
+code {
+    font-size: 90%;
+}
+
+/* Allow two text columns on one slide. To use:
+ * <div class="columns">
+ *   <div>
+ *
+ *   ## Part 1
+ *   Note: the empty lines above and below matter.
+ *
+ *   </div>
+ *   <div>
+ *
+ *   ## Part 2
+ *   ...
+ *
+ *   </div>
+ * </div>
+ */
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+/* A way to center an image, based on its alternative text. In the Marp
+ * markdown, that's "![center](...)" -- "center" becomes the alt text.
+ */
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* A custom slide style for new chapters in the presentation.
+ * To use, say something like:
+ *
+ * <!-- _class: chapter -->
+ * Next chapter!
+ *
+ */
+section.chapter {
+    background-color: #08A9E2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+section.chapter h1 {
+    font-size: 3em;
+    color: #fff;
+}
