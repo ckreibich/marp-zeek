@@ -108,3 +108,35 @@ section.chapter h1 {
     font-size: 3em;
     color: #fff;
 }
+
+/* A custom slide style for exercises.
+ *
+ * <!-- _class: exercise -->
+ *
+ */
+section.exercise {
+}
+
+section.exercise h1 {
+    color: #CC6900;
+    font-size: 1.7em;
+}
+
+section.exercise h2 {
+    color: #8e5d28;
+    font-size: 1.4em;
+}
+
+section.exercise h3 {
+    color: #6f573c;
+    font-size: 1.2em;
+}
+
+section.exercise h4 {
+    color: #605446;
+    font-size: 1em;
+}
+section.exercise h5 {
+    color: #505050;
+    font-size: 0.9em;
+}
