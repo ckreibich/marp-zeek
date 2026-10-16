@@ -16,4 +16,4 @@ done
 
 dir="$(cd -P "$(dirname "$source")" >/dev/null 2>&1 && pwd)"
 
-marp --engine $dir/marp/engine.js --theme $dir/zeek.css "$@"
+marp -c $dir/config.yml --engine $dir/marp/engine.js --theme $dir/zeek.css "$@"
