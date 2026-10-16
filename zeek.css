@@ -16,6 +16,7 @@
     font-family: 'Carlito', sans-serif;
     color: #505050;
     background: white;
+    font-size: 42px;
 }
 
 h1 {
@@ -107,6 +108,15 @@ section.chapter {
 section.chapter h1 {
     font-size: 3em;
     color: #fff;
+}
+
+/* Tune the title ("lead") page
+ *
+ * <!-- _class: lead -->
+ *
+ */
+section.lead {
+    font-size: 2.5em;
 }
 
 /* A custom slide style for exercises.
