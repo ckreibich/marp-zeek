@@ -5,7 +5,7 @@ _class: lead
 
 ![bg](https://marp.app/assets/hero-background.svg)
 
-![width:250px](./zeek-logo.png)
+![width:250px](docs/zeek-logo.png)
 # Introduction to Zeek
 ### A Zeek training
 *NSF Cybersecurity Summmit, 2026*
@@ -127,7 +127,7 @@ bar
 
 # A big image with some text
 
-![center width:400px](zeek-logo.png)
+![center width:400px](docs/zeek-logo.png)
 
 This is one of several ways to center an image.
 
@@ -143,7 +143,7 @@ This is just text that explains what the thing on the right is all about.
 </div>
 <div>
 
-![center width:300px](zeek-logo.png)
+![center width:300px](docs/zeek-logo.png)
 
 </div>
 </div>

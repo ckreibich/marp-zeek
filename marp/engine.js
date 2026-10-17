@@ -4,10 +4,13 @@ const { Marp } = require('@marp-team/marp-core')
 const hljs = require('highlight.js')
 const zeek = require('./highlightjs-zeek.js');
 
-globalThis.hljs = hljs
 hljs.registerLanguage('zeek', zeek);
 
-module.exports = class CustomMarp extends Marp {
+class CustomMarp extends Marp {
+    constructor(opts) {
+        super(opts);
+    }
+
     highlighter(code, lang, _attrs) {
         if (lang && hljs.getLanguage(lang)) {
             return hljs.highlight(code, {
@@ -18,3 +21,5 @@ module.exports = class CustomMarp extends Marp {
         return ''
     }
 }
+
+module.exports = CustomMarp
