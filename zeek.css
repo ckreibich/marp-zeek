@@ -19,6 +19,12 @@
     font-size: 42px;
 }
 
+p,
+pre,
+blockquote {
+  margin: 0.4em 0;
+}
+
 h1 {
     color: #08A9E2;
     font-size: 1.7em;
@@ -56,6 +62,12 @@ pre, code {
 code {
     font-size: 90%;
 }
+
+/* "shell" and "console" seem to do the same highlighting. Use "shell" for a
+ * different background color, for example to highlight inside vs outside of
+ * container.
+*/
+pre:has(code.language-shell) { background-color: #ffdaaa; }
 
 /* Allow two text columns on one slide. To use:
  * <div class="columns">
