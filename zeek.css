@@ -56,11 +56,12 @@ pre, code {
     border: none;
     border-radius: 10px;
     color: #505080;
+    font-size: 115%;
+    line-height: 1.2;
 }
 
-/* This is for inline code snippets. */
 code {
-    font-size: 90%;
+    font-size: 95%;
 }
 
 /* "shell" and "console" seem to do the same highlighting. Use "shell" for a
@@ -130,34 +131,44 @@ section.lead {
     font-size: 2.5em;
 }
 
-/* A custom slide style for exercises.
- *
- * <!-- _class: exercise -->
- *
+/* A slide style with most text being smaller:
  */
-section.exercise {
+section.smaller p {
+    font-size: 75%;
 }
 
-section.exercise h1 {
+section.smaller pre {
+    font-size: 90%;
+}
+
+/* Custom styling for exercises.
+ */
+
+.exercise p {
+    color: #8e5d28;
+    font-weight: bold;
+}
+
+.exercise h1 {
     color: #CC6900;
     font-size: 1.7em;
 }
 
-section.exercise h2 {
+.exercise h2 {
     color: #8e5d28;
     font-size: 1.4em;
 }
 
-section.exercise h3 {
+.exercise h3 {
     color: #6f573c;
     font-size: 1.2em;
 }
 
-section.exercise h4 {
-    color: #605446;
+.exercise h4 {
+    color: #6f573c;
     font-size: 1em;
 }
-section.exercise h5 {
-    color: #505050;
+.exercise h5 {
+    color: #6f573c;
     font-size: 0.9em;
 }
