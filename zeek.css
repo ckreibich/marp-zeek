@@ -14,6 +14,7 @@
 
 :root {
     font-family: 'Carlito', sans-serif;
+    letter-spacing: -0.001em; /* A tiny bit tighter */
     color: #505050;
     background: white;
     font-size: 42px;
@@ -23,6 +24,10 @@ p,
 pre,
 blockquote {
   margin: 0.4em 0;
+}
+
+strong {
+    color: #007EA5;
 }
 
 h1 {
@@ -69,6 +74,28 @@ code {
  * container.
 */
 pre:has(code.language-shell) { background-color: #ffdaaa; }
+
+/* Tables. */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 1em 0 0;
+  width: 100%;
+
+  thead th {
+    padding: 0.2em 0.4em;
+    border-width: 2px;
+    border-style: hidden;
+    background: #08A9E2;
+    color: #ffffff;
+  }
+
+  td {
+    padding: 0.2em 0.4em;
+    border-width: 2px;
+    border-style: hidden;
+  }
+}
 
 /* Allow two text columns on one slide. To use:
  * <div class="columns">
