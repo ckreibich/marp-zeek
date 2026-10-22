@@ -149,6 +149,20 @@ section.chapter h1 {
     color: #fff;
 }
 
+section.chapter p {
+    color: #505050;
+}
+
+section.chapter a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+section.chapter a:visited {
+    color: #ffffff;
+    font-weight: bold;
+}
+
 /* Tune the title ("lead") page
  *
  * <!-- _class: lead -->
@@ -161,6 +175,10 @@ section.lead {
 /* A slide style with most text being smaller:
  */
 section.smaller p {
+    font-size: 75%;
+}
+
+section.smaller li {
     font-size: 75%;
 }
 
